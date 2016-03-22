@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vtr: MyString
+  name: MyString
+  valor: 9.99
+
+two:
+  vtr: MyString
+  name: MyString
+  valor: 9.99
