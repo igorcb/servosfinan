@@ -1,0 +1,49 @@
+<%= form_for(@account_payable) do |f| %>
+  <% if @account_payable.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@account_payable.errors.count, "error") %> prohibited this account_payable from being saved:</h2>
+
+      <ul>
+      <% @account_payable.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :type_account %><br>
+    <%= f.number_field :type_account %>
+  </div>
+  <div class="field">
+    <%= f.label :supplier_id %><br>
+    <%= f.number_field :supplier_id %>
+  </div>
+  <div class="field">
+    <%= f.label :cost_center_id %><br>
+    <%= f.number_field :cost_center_id %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_method_id %><br>
+    <%= f.text_field :payment_method_id %>
+  </div>
+  <div class="field">
+    <%= f.label :documento %><br>
+    <%= f.text_field :documento %>
+  </div>
+  <div class="field">
+    <%= f.label :data_vencimento %><br>
+    <%= f.date_select :data_vencimento %>
+  </div>
+  <div class="field">
+    <%= f.label :valor %><br>
+    <%= f.text_field :valor %>
+  </div>
+  <div class="field">
+    <%= f.label :observacao %><br>
+    <%= f.text_area :observacao %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

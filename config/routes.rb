@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :account_receivables
+  resources :account_payables
+  resources :cash_accounts
+  resources :banks
   resources :payment_methods
   resources :cost_centers
   resources :drivers

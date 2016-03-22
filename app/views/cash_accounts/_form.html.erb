@@ -1,0 +1,33 @@
+<%= form_for(@cash_account) do |f| %>
+  <% if @cash_account.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cash_account.errors.count, "error") %> prohibited this cash_account from being saved:</h2>
+
+      <ul>
+      <% @cash_account.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :bank_id %><br>
+    <%= f.text_field :bank_id %>
+  </div>
+  <div class="field">
+    <%= f.label :agencia %><br>
+    <%= f.text_field :agencia %>
+  </div>
+  <div class="field">
+    <%= f.label :conta_corrente %><br>
+    <%= f.text_field :conta_corrente %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

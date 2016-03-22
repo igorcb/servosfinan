@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Supplier:</strong>
+  <%= @account_receivable.supplier.name %>
+</p>
+
+<p>
+  <strong>Cost center:</strong>
+  <%= @account_receivable.cost_center.name %>
+</p>
+
+<p>
+  <strong>Payment method:</strong>
+  <%= @account_receivable.payment_method.name %>
+</p>
+
+<p>
+  <strong>Documento:</strong>
+  <%= @account_receivable.documento %>
+</p>
+
+<p>
+  <strong>Data vencimento:</strong>
+  <%= date_br(@account_receivable.data_vencimento) %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @account_receivable.valor %>
+</p>
+
+<p>
+  <strong>Observacao:</strong>
+  <%= @account_receivable.observacao %>
+</p>
+
+<%= link_to 'Edit', edit_account_receivable_path(@account_receivable) %> |
+<%= link_to 'Back', account_receivables_path %>

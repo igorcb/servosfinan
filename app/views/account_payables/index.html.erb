@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Account Payables</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type account</th>
+      <th>Supplier</th>
+      <th>Cost center</th>
+      <th>Payment method</th>
+      <th>Documento</th>
+      <th>Data vencimento</th>
+      <th>Valor</th>
+      <th>Observacao</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @account_payables.each do |account_payable| %>
+      <tr>
+        <td><%= account_payable.type_account %></td>
+        <td><%= account_payable.supplier_id %></td>
+        <td><%= account_payable.cost_center_id %></td>
+        <td><%= account_payable.payment_method %></td>
+        <td><%= account_payable.documento %></td>
+        <td><%= account_payable.data_vencimento %></td>
+        <td><%= account_payable.valor %></td>
+        <td><%= account_payable.observacao %></td>
+        <td><%= link_to 'Show', account_payable %></td>
+        <td><%= link_to 'Edit', edit_account_payable_path(account_payable) %></td>
+        <td><%= link_to 'Destroy', account_payable, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Account payable', new_account_payable_path %>
