@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :payment_methods
   resources :cost_centers
   resources :drivers
   # The priority is based upon order of creation: first created -> highest priority.
