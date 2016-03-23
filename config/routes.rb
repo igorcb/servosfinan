@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
-  resources :account_receivables
+
+  resources :lower_receivables, only: [:destroy]
+  resources :account_receivables do 
+    member do
+      get 'lower'
+      post 'pay'
+    end    
+  end
+
   resources :account_payables
   resources :cash_accounts
   resources :banks

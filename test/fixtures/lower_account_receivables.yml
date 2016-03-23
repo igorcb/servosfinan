@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  account_receivable_id: 
+  cash_account_id: 
+  data_pagamento: 2016-03-22
+  valor_pago: MyString
+  juros: MyString
+  desconto: MyString
+  total_pago: 9.99
+
+two:
+  account_receivable_id: 
+  cash_account_id: 
+  data_pagamento: 2016-03-22
+  valor_pago: MyString
+  juros: MyString
+  desconto: MyString
+  total_pago: 9.99

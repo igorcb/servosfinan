@@ -1,5 +1,5 @@
 class AccountReceivablesController < ApplicationController
-  before_action :set_account_receivable, only: [:show, :edit, :update, :destroy]
+  before_action :set_account_receivable, only: [:show, :edit, :update, :destroy, :lower, :pay]
 
   # GET /account_receivables
   # GET /account_receivables.json
@@ -61,6 +61,43 @@ class AccountReceivablesController < ApplicationController
     end
   end
 
+  def lower
+    if @account_receivable.status == AccountReceivable::TipoStatus::PAGO
+      flash[:danger] = "AccountReceivable already made payment."
+      redirect_to account_receivables_path #(params[:id])
+      return 
+    end
+    @cash_accounts = CashAccount.order('name')
+    @cost_center = CostCenter.order('name')
+  end
+
+  def pay
+    if !params[:lower_receivables][:cash_account_id].present?
+      flash[:danger] = "Conta Corrente can't be blank."
+      redirect_to lower_account_receivable_path(params[:id])
+      return 
+    elsif !params[:lower_receivables][:data_pagamento].present?
+      flash[:danger] = "Data Pagamento can't be blank."
+      redirect_to lower_account_receivable_path(params[:id])
+      return 
+    elsif !params[:lower_receivables][:valor_pago].present?
+      flash[:danger] = "Valor do Pagamento can't be blank."
+      redirect_to lower_account_receivable_path(params[:id])
+      return
+    end
+
+    respond_to do |format|
+      if @account_receivable.payament(params[:lower_receivables])
+        format.html { redirect_to @account_receivable, flash: { success: "Lower AccountReceivables was successful." } }
+        #format.json { render action: 'show', status: :created, location: @account_receivable }
+      else
+        format.html { redirect_to @account_receivable, flash: { danger: "Could not lower accounts receivable was successful." }}
+        format.json { render json: @account_receivable.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_account_receivable
@@ -69,6 +106,9 @@ class AccountReceivablesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def account_receivable_params
-      params.require(:account_receivable).permit(:type_account, :supplier_id, :cost_center_id, :payment_method_id, :documento, :data_vencimento, :valor, :observacao)
+      params.require(:account_receivable).permit(:type_account, :supplier_id, :cost_center_id, :payment_method_id, :documento, 
+        :data_vencimento, :valor, :observacao,
+        lower_receivables: [:data_pagamento, :valor_pago, :juros, :desconto, :total_pago]
+        )
     end
 end
