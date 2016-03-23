@@ -1,4 +1,5 @@
 class AccountPayablesController < ApplicationController
+  before_filter :authenticate_user!
   before_action :set_account_payable, only: [:show, :edit, :update, :destroy]
 
   # GET /account_payables

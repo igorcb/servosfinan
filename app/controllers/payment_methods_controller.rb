@@ -1,4 +1,5 @@
 class PaymentMethodsController < ApplicationController
+  before_filter :authenticate_user!
   before_action :set_payment_method, only: [:show, :edit, :update, :destroy]
 
   # GET /payment_methods

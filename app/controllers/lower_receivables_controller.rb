@@ -1,4 +1,5 @@
 class LowerReceivablesController < ApplicationController
+  before_filter :authenticate_user!
   def destroy
 		@lower = LowerAccountReceivable.find(params[:id])
 		@account_receivable = AccountReceivable.find(@lower.account_receivable)

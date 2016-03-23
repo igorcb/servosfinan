@@ -1,0 +1,1951 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="generator" content="Phusion Passenger">
+	<title>Web application could not be started</title>
+	<style type="text/css">
+		body {
+	font-family: Verdana, 'Bitstream Vera Sans', Arial, Sans-Serif;
+	font-size: 10pt;
+	background: white;
+	color: #222222;
+	margin: 0;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	padding-left: 4.5em;
+	padding-right: 4.5em;
+}
+
+h1 {
+	font-size: 17pt;
+	font-weight: medium;
+	color: #533e72;
+	border-bottom: 1px solid #533e72;
+}
+
+h1.title {
+	margin-top: 0;
+}
+
+h1.error_title {
+	color: red;
+	border-bottom: 1px solid red;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+dt {
+	font-weight: bold;
+	color: #280050;
+}
+
+dd {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+.commands {
+	border: 1px solid #b594e7;
+	background: #ddc6ff;
+	padding: 0.5em;
+	margin: 0.5em;
+	font-family: 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
+}
+
+pre {
+	overflow: auto;
+	white-space: pre-wrap;
+	text-align: left;
+}
+
+table.backtrace th {
+	background: #8470a6;
+	color: white;
+}
+
+table.backtrace th,
+table.backtrace td {
+	padding: 0.2em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+}
+
+table.backtrace tr td {
+	background: #ecdfff;
+}
+
+table.backtrace tr.even td {
+	background: #f7f2ff;
+}
+
+table.backtrace td.index {
+	font-weight: bold;
+}
+
+#site_footer {
+	border-top: solid 1px black;
+	margin-top: 1em;
+	padding-top: 1em;
+	font-size: small;
+	color: #777777;
+}
+
+#site_footer a {
+	color: #65498e;
+}
+
+#site_footer a:hover {
+	color: #9681d9;
+}
+
+#site_header .corporate_identity {
+	display: none;
+}
+
+	</style>
+	<link rel="stylesheet" type="text/css" href="http://www.modrails.com/error_pages/1.0/error_page.css">
+	<style type="text/css">
+		dd {
+			text-align: left;
+		}
+
+		dd pre {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="site_container">
+		<div id="site_header">
+			<ul class="corporate_identity">
+				<li class="logo"><a href="https://www.phusionpassenger.com"><span>Phusion Passenger</span></a></li>
+			</ul>
+		</div>
+		<div id="site_body">
+			<h1 class="error_title">Web application could not be started</h1>
+			<div id="content">
+				<pre>undefined local variable or method `e35e6e4dbe09618f46baa2a511ea48d4fcfa58e5266fdefe74310de64d6ad73b47948cca8e7296be851b2040996ced0321119ae6317a19552a8f203c1b642e9f&apos; for main:<wbr>Object (NameError)
+  /home/igor/rails_app/servosfinan/config/initializers/devise.rb:<wbr>9:<wbr>in `block in &lt;top (required)&gt;&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/lib/devise.rb:<wbr>283:<wbr>in `setup&apos;
+  /home/igor/rails_app/servosfinan/config/initializers/devise.rb:<wbr>3:<wbr>in `&lt;top (required)&gt;&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/dependencies.rb:<wbr>268:<wbr>in `load&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/dependencies.rb:<wbr>268:<wbr>in `block in load&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/dependencies.rb:<wbr>240:<wbr>in `load_dependency&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/dependencies.rb:<wbr>268:<wbr>in `load&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/engine.rb:<wbr>652:<wbr>in `block in load_config_initializer&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/notifications.rb:<wbr>166:<wbr>in `instrument&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/engine.rb:<wbr>651:<wbr>in `load_config_initializer&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/engine.rb:<wbr>616:<wbr>in `block (2 levels) in &lt;class:<wbr>Engine&gt;&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/engine.rb:<wbr>615:<wbr>in `each&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/engine.rb:<wbr>615:<wbr>in `block in &lt;class:<wbr>Engine&gt;&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/initializable.rb:<wbr>30:<wbr>in `instance_exec&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/initializable.rb:<wbr>30:<wbr>in `run&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/initializable.rb:<wbr>55:<wbr>in `block in run_initializers&apos;
+  /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/tsort.rb:<wbr>150:<wbr>in `block in tsort_each&apos;
+  /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/tsort.rb:<wbr>183:<wbr>in `block (2 levels) in each_strongly_connected_component&apos;
+  /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/tsort.rb:<wbr>210:<wbr>in `block (2 levels) in each_strongly_connected_component_from&apos;
+  /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/tsort.rb:<wbr>219:<wbr>in `each_strongly_connected_component_from&apos;
+  /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/tsort.rb:<wbr>209:<wbr>in `block in each_strongly_connected_component_from&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/initializable.rb:<wbr>44:<wbr>in `each&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/initializable.rb:<wbr>44:<wbr>in `tsort_each_child&apos;
+  /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/tsort.rb:<wbr>203:<wbr>in `each_strongly_connected_component_from&apos;
+  /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/tsort.rb:<wbr>182:<wbr>in `block in each_strongly_connected_component&apos;
+  /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/tsort.rb:<wbr>180:<wbr>in `each&apos;
+  /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/tsort.rb:<wbr>180:<wbr>in `each_strongly_connected_component&apos;
+  /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/tsort.rb:<wbr>148:<wbr>in `tsort_each&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/initializable.rb:<wbr>54:<wbr>in `run_initializers&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/application.rb:<wbr>352:<wbr>in `initialize!&apos;
+  /home/igor/rails_app/servosfinan/config/environment.rb:<wbr>5:<wbr>in `&lt;top (required)&gt;&apos;
+  config.ru:<wbr>3:<wbr>in `require&apos;
+  config.ru:<wbr>3:<wbr>in `block in &lt;main&gt;&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-1.6.4/lib/rack/builder.rb:<wbr>55:<wbr>in `instance_eval&apos;
+  /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-1.6.4/lib/rack/builder.rb:<wbr>55:<wbr>in `initialize&apos;
+  config.ru:<wbr>1:<wbr>in `new&apos;
+  config.ru:<wbr>1:<wbr>in `&lt;main&gt;&apos;
+  /usr/share/passenger/helper-scripts/rack-preloader.rb:<wbr>110:<wbr>in `eval&apos;
+  /usr/share/passenger/helper-scripts/rack-preloader.rb:<wbr>110:<wbr>in `preload_app&apos;
+  /usr/share/passenger/helper-scripts/rack-preloader.rb:<wbr>156:<wbr>in `&lt;module:<wbr>App&gt;&apos;
+  /usr/share/passenger/helper-scripts/rack-preloader.rb:<wbr>30:<wbr>in `&lt;module:<wbr>PhusionPassenger&gt;&apos;
+  /usr/share/passenger/helper-scripts/rack-preloader.rb:<wbr>29:<wbr>in `&lt;main&gt;&apos;
+</pre>
+
+				<dl>
+				<dt>Error ID</dt>
+				<dd>d8466d6f</dd>
+				<dt>Application root</dt>
+				<dd>/home/igor/rails_app/servosfinan</dd>
+				<dt>Environment (value of RAILS_ENV, RACK_ENV, WSGI_ENV, NODE_ENV and PASSENGER_APP_ENV)</dt>
+				<dd>production</dd>
+				
+					<dt>Ruby interpreter command</dt>
+					<dd><pre>/usr/bin/passenger_free_ruby</pre></dd>
+				
+				<dt>User and groups</dt>
+				<dd><pre>uid=<wbr>1000(igor) gid=<wbr>1000(igor) groups=<wbr>1000(igor)
+</pre></dd>
+				<dt>Environment variables</dt>
+				<dd><pre>rvm_bin_path =<wbr> /home/igor/.rvm/bin
+GEM_HOME =<wbr> /home/igor/.rvm/gems/ruby-2.0.0-p643
+SHELL =<wbr> /bin/bash
+IRBRC =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/.irbrc
+PASSENGER_DEBUG_DIR =<wbr> /tmp/passenger.spawn-debug.XXXXslhuoR
+MY_RUBY_HOME =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643
+rvm_stored_umask =<wbr> 0022
+USER =<wbr> igor
+_system_type =<wbr> Linux
+rvm_path =<wbr> /home/igor/.rvm
+PASSENGER_USE_FEEDBACK_FD =<wbr> true
+rvm_prefix =<wbr> /home/igor
+PATH =<wbr> /home/igor/.rvm/gems/ruby-2.0.0-p643/bin:<wbr>/home/igor/.rvm/gems/ruby-2.0.0-p643@global/bin:<wbr>/home/igor/.rvm/rubies/ruby-2.0.0-p643/bin:<wbr>/usr/local/bin:<wbr>/usr/local/sbin:<wbr>/usr/bin:<wbr>/usr/sbin:<wbr>/bin:<wbr>/sbin:<wbr>.:<wbr>/home/igor/.rvm/bin
+rvm_loaded_flag =<wbr> 1
+PWD =<wbr> /home/igor/rails_app/servosfinan
+_system_arch =<wbr> x86_64
+_system_version =<wbr> 14.04
+rvm_version =<wbr> 1.26.11 (latest)
+SHLVL =<wbr> 0
+HOME =<wbr> /home/igor
+LOGNAME =<wbr> igor
+SERVER_SOFTWARE =<wbr> nginx/1.8.1 Phusion_Passenger/5.0.26
+GEM_PATH =<wbr> /home/igor/.rvm/gems/ruby-2.0.0-p643:<wbr>/home/igor/.rvm/gems/ruby-2.0.0-p643@global
+RUBY_VERSION =<wbr> ruby-2.0.0-p643
+rvm_user_install_flag =<wbr> 1
+_system_name =<wbr> Ubuntu
+IN_PASSENGER =<wbr> 1
+PYTHONUNBUFFERED =<wbr> 1
+NODE_PATH =<wbr> /usr/share/passenger/node
+RAILS_ENV =<wbr> production
+RACK_ENV =<wbr> production
+WSGI_ENV =<wbr> production
+NODE_ENV =<wbr> production
+PASSENGER_APP_ENV =<wbr> production
+_ORIGINAL_GEM_PATH =<wbr> /home/igor/.rvm/gems/ruby-2.0.0-p643:<wbr>/home/igor/.rvm/gems/ruby-2.0.0-p643@global
+BUNDLE_BIN_PATH =<wbr> /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/exe/bundle
+BUNDLE_GEMFILE =<wbr> /home/igor/rails_app/servosfinan/Gemfile
+RUBYOPT =<wbr> -rbundler/setup
+RUBYLIB =<wbr> /home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib
+</pre></dd>
+				<dt>Ulimits</dt>
+				<dd><pre>Unknown</pre></dd>
+				
+					<dt>System metrics</dt>
+					<dd><pre>------------- General -------------
+Kernel version    :<wbr> 3.13.0-36-generic
+Uptime            :<wbr> 50d 5h 42m 36s
+Load averages     :<wbr> 0.02%,<wbr> 0.05%,<wbr> 0.05%
+Fork rate         :<wbr> unknown
+
+------------- CPU -------------
+Number of CPUs    :<wbr>    1
+Average CPU usage :<wbr>   0%  --   0% user,<wbr>   0% nice,<wbr>   0% system,<wbr> 100% idle
+  CPU 1           :<wbr>   0%  --   0% user,<wbr>   0% nice,<wbr>   0% system,<wbr> 100% idle
+I/O pressure      :<wbr>   0%
+  CPU 1           :<wbr>   0%
+Interference from other VMs:<wbr>   0%
+  CPU 1                    :<wbr>   0%
+
+------------- Memory -------------
+RAM total         :<wbr>    994 MB
+RAM used          :<wbr>    636 MB (64%)
+RAM free          :<wbr>    358 MB
+Swap total        :<wbr>   1905 MB
+Swap used         :<wbr>     42 MB (2%)
+Swap free         :<wbr>   1863 MB
+Swap in           :<wbr> unknown
+Swap out          :<wbr> unknown
+
+</pre></dd>
+				
+				
+					<dt>General Ruby interpreter information</dt>
+					<dd><pre>RUBY_VERSION =<wbr> 2.0.0
+RUBY_PLATFORM =<wbr> x86_64-linux
+RUBY_ENGINE =<wbr> ruby
+RubyGems version =<wbr> 2.4.8
+RubyGems paths =<wbr> [&quot;/home/igor/.rvm/gems/ruby-2.0.0-p643&quot;,<wbr> &quot;/home/igor/.rvm/gems/ruby-2.0.0-p643@global&quot;]
+</pre></dd>
+				
+				
+					<dt>Ruby configuration (RbConfig::CONFIG)</dt>
+					<dd><pre>DESTDIR =<wbr> 
+MAJOR =<wbr> 2
+MINOR =<wbr> 0
+TEENY =<wbr> 0
+PATCHLEVEL =<wbr> 643
+INSTALL =<wbr> /usr/bin/install -c
+EXEEXT =<wbr> 
+prefix =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643
+ruby_install_name =<wbr> ruby
+RUBY_INSTALL_NAME =<wbr> ruby
+RUBY_SO_NAME =<wbr> ruby
+exec =<wbr> exec
+ruby_pc =<wbr> ruby-2.0.pc
+PACKAGE =<wbr> ruby
+BUILTIN_TRANSSRCS =<wbr>  newline.c
+USE_RUBYGEMS =<wbr> YES
+MANTYPE =<wbr> doc
+NROFF =<wbr> /usr/bin/nroff
+vendorarchhdrdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/include/ruby-2.0.0/vendor_ruby/x86_64-linux
+sitearchhdrdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/include/ruby-2.0.0/site_ruby/x86_64-linux
+rubyarchhdrdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/include/ruby-2.0.0/x86_64-linux
+vendorhdrdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/include/ruby-2.0.0/vendor_ruby
+sitehdrdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/include/ruby-2.0.0/site_ruby
+rubyhdrdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/include/ruby-2.0.0
+UNIVERSAL_INTS =<wbr> 
+UNIVERSAL_ARCHNAMES =<wbr> 
+configure_args =<wbr>  &apos;--prefix=<wbr>/home/igor/.rvm/rubies/ruby-2.0.0-p643&apos; &apos;--disable-install-doc&apos; &apos;--enable-shared&apos;
+vendorarchdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/vendor_ruby/2.0.0/x86_64-linux
+vendorlibdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/vendor_ruby/2.0.0
+vendordir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/vendor_ruby
+sitearchdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/x86_64-linux
+sitelibdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0
+sitedir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby
+rubyarchdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux
+rubylibdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0
+ruby_version =<wbr> 2.0.0
+sitearch =<wbr> x86_64-linux
+arch =<wbr> x86_64-linux
+sitearchincludedir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/include/x86_64-linux
+archincludedir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/include/x86_64-linux
+sitearchlibdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/x86_64-linux
+archlibdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/x86_64-linux
+RI_BASE_NAME =<wbr> ri
+ridir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/share/ri
+rubysitearchprefix =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/x86_64-linux
+rubyarchprefix =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/x86_64-linux
+rubylibprefix =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby
+MAKEFILES =<wbr> Makefile
+PLATFORM_DIR =<wbr> 
+THREAD_MODEL =<wbr> pthread
+SYMBOL_PREFIX =<wbr> 
+EXPORT_PREFIX =<wbr> 
+COMMON_HEADERS =<wbr> 
+COMMON_MACROS =<wbr> 
+COMMON_LIBS =<wbr> 
+MAINLIBS =<wbr> 
+ENABLE_SHARED =<wbr> yes
+DLDLIBS =<wbr>  -lc
+SOLIBS =<wbr> -lpthread -lrt -ldl -lcrypt -lm 
+LIBRUBYARG_SHARED =<wbr> -Wl,<wbr>-R -Wl,<wbr>/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib -L/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib -lruby
+LIBRUBYARG_STATIC =<wbr> -Wl,<wbr>-R -Wl,<wbr>/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib -L/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib -lruby-static
+LIBRUBYARG =<wbr> -Wl,<wbr>-R -Wl,<wbr>/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib -L/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib -lruby
+LIBRUBY =<wbr> libruby.so.2.0.0
+LIBRUBY_ALIASES =<wbr> libruby.so.2.0 libruby.so
+LIBRUBY_SO =<wbr> libruby.so.2.0.0
+LIBRUBY_A =<wbr> libruby-static.a
+RUBYW_INSTALL_NAME =<wbr> 
+rubyw_install_name =<wbr> 
+LIBRUBY_DLDFLAGS =<wbr> -Wl,<wbr>-soname,<wbr>libruby.so.2.0 
+LIBRUBY_LDSHARED =<wbr> gcc -shared
+EXTDLDFLAGS =<wbr> 
+EXTLDFLAGS =<wbr> 
+strict_warnflags =<wbr> -ansi -std=<wbr>iso9899:<wbr>199409
+warnflags =<wbr> -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration
+debugflags =<wbr> -ggdb3
+optflags =<wbr> -O3 -fno-fast-math
+cxxflags =<wbr>  -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration
+cflags =<wbr>  -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration
+cppflags =<wbr> 
+NULLCMD =<wbr> :<wbr>
+DLNOBJ =<wbr> dln.o
+INSTALLDOC =<wbr> nodoc
+CAPITARGET =<wbr> nodoc
+RDOCTARGET =<wbr> nodoc
+DTRACE_GLOMMED_OBJ =<wbr> 
+DTRACE_OBJ =<wbr> 
+DTRACE_EXT =<wbr> dmyh
+EXECUTABLE_EXTS =<wbr> 
+ARCHFILE =<wbr> 
+LIBRUBY_RELATIVE =<wbr> no
+EXTOUT =<wbr> .ext
+RUNRUBY_COMMAND =<wbr> $(MINIRUBY) $(srcdir)/tool/runruby.rb --extout=<wbr>.ext $(RUNRUBYOPT)
+PREP =<wbr> miniruby
+BTESTRUBY =<wbr> $(MINIRUBY)
+CROSS_COMPILING =<wbr> no
+TEST_RUNNABLE =<wbr> yes
+setup =<wbr> Setup
+EXTSTATIC =<wbr> 
+STRIP =<wbr> strip -S -x
+TRY_LINK =<wbr> 
+LIBPATHENV =<wbr> LD_LIBRARY_PATH
+RPATHFLAG =<wbr>  -Wl,<wbr>-R%1$-s
+LIBPATHFLAG =<wbr>  -L%1$-s
+LINK_SO =<wbr> 
+LIBEXT =<wbr> a
+DLEXT2 =<wbr> 
+DLEXT =<wbr> so
+LDSHAREDXX =<wbr> g++ -shared
+LDSHARED =<wbr> gcc -shared
+CCDLFLAGS =<wbr> -fPIC
+STATIC =<wbr> 
+ARCH_FLAG =<wbr> 
+DLDFLAGS =<wbr> 
+ALLOCA =<wbr> 
+codesign =<wbr> 
+POSTLINK =<wbr> :<wbr>
+WERRORFLAG =<wbr> -Werror
+CHDIR =<wbr> cd -P
+RMALL =<wbr> rm -fr
+RMDIRS =<wbr> rmdir --ignore-fail-on-non-empty -p
+RMDIR =<wbr> rmdir --ignore-fail-on-non-empty
+CP =<wbr> cp
+RM =<wbr> rm -f
+PKG_CONFIG =<wbr> pkg-config
+PYTHON =<wbr> 
+DOXYGEN =<wbr> 
+DOT =<wbr> 
+DTRACE =<wbr> 
+MAKEDIRS =<wbr> /bin/mkdir -p
+MKDIR_P =<wbr> /bin/mkdir -p
+INSTALL_DATA =<wbr> /usr/bin/install -c -m 644
+INSTALL_SCRIPT =<wbr> /usr/bin/install -c
+INSTALL_PROGRAM =<wbr> /usr/bin/install -c
+SET_MAKE =<wbr> 
+LN_S =<wbr> ln -s
+NM =<wbr> nm
+DLLWRAP =<wbr> 
+WINDRES =<wbr> 
+OBJCOPY =<wbr> :<wbr>
+OBJDUMP =<wbr> objdump
+ASFLAGS =<wbr> 
+AS =<wbr> as
+AR =<wbr> ar
+RANLIB =<wbr> ranlib
+try_header =<wbr> 
+COUTFLAG =<wbr> -o 
+OUTFLAG =<wbr> -o 
+CPPOUTFILE =<wbr> -o conftest.i
+GNU_LD =<wbr> yes
+LD =<wbr> ld
+GCC =<wbr> yes
+EGREP =<wbr> /bin/grep -E
+GREP =<wbr> /bin/grep
+CPP =<wbr> gcc -E
+CXXFLAGS =<wbr>  -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration
+CXX =<wbr> g++
+OBJEXT =<wbr> o
+CPPFLAGS =<wbr>   
+LDFLAGS =<wbr> -L. -fstack-protector -rdynamic -Wl,<wbr>-export-dynamic
+CFLAGS =<wbr>  -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC
+CC =<wbr> gcc
+NACL_SDK_VARIANT =<wbr> 
+NACL_SDK_ROOT =<wbr> 
+NACL_TOOLCHAIN =<wbr> 
+target_os =<wbr> linux
+target_vendor =<wbr> unknown
+target_cpu =<wbr> x86_64
+target =<wbr> x86_64-unknown-linux-gnu
+host_os =<wbr> linux-gnu
+host_vendor =<wbr> unknown
+host_cpu =<wbr> x86_64
+host =<wbr> x86_64-unknown-linux-gnu
+RUBY_VERSION_NAME =<wbr> ruby-2.0.0
+RUBYW_BASE_NAME =<wbr> rubyw
+RUBY_BASE_NAME =<wbr> ruby
+build_os =<wbr> linux-gnu
+build_vendor =<wbr> unknown
+build_cpu =<wbr> x86_64
+build =<wbr> x86_64-unknown-linux-gnu
+RUBY_RELEASE_DATE =<wbr> 2015-02-25
+RUBY_PROGRAM_VERSION =<wbr> 2.0.0
+target_alias =<wbr> 
+host_alias =<wbr> 
+build_alias =<wbr> 
+LIBS =<wbr> -lpthread -lrt -ldl -lcrypt -lm 
+ECHO_T =<wbr> 
+ECHO_N =<wbr> -n
+ECHO_C =<wbr> 
+DEFS =<wbr> 
+mandir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/share/man
+localedir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/share/locale
+libdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib
+psdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/share/doc/ruby
+pdfdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/share/doc/ruby
+dvidir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/share/doc/ruby
+htmldir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/share/doc/ruby
+infodir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/share/info
+docdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/share/doc/ruby
+oldincludedir =<wbr> /usr/include
+includedir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/include
+localstatedir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/var
+sharedstatedir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/com
+sysconfdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/etc
+datadir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/share
+datarootdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/share
+libexecdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/libexec
+sbindir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/sbin
+bindir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/bin
+exec_prefix =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643
+PACKAGE_URL =<wbr> 
+PACKAGE_BUGREPORT =<wbr> 
+PACKAGE_STRING =<wbr> 
+PACKAGE_VERSION =<wbr> 
+PACKAGE_TARNAME =<wbr> 
+PACKAGE_NAME =<wbr> 
+PATH_SEPARATOR =<wbr> :<wbr>
+SHELL =<wbr> /bin/bash
+archdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux
+topdir =<wbr> /home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux
+</pre></dd>
+				
+				
+					<dt>Activated Ruby gems</dt>
+					<dd><pre>bundler =<wbr>&gt; 1.11.2
+io-console =<wbr>&gt; 0.4.2
+rake =<wbr>&gt; 11.1.1
+i18n =<wbr>&gt; 0.7.0
+json =<wbr>&gt; 1.8.3
+minitest =<wbr>&gt; 5.8.4
+thread_safe =<wbr>&gt; 0.3.5
+tzinfo =<wbr>&gt; 1.2.2
+activesupport =<wbr>&gt; 4.2.5
+builder =<wbr>&gt; 3.2.2
+erubis =<wbr>&gt; 2.7.0
+mini_portile2 =<wbr>&gt; 2.0.0
+nokogiri =<wbr>&gt; 1.6.7.2
+rails-deprecated_sanitizer =<wbr>&gt; 1.0.3
+rails-dom-testing =<wbr>&gt; 1.0.7
+loofah =<wbr>&gt; 2.0.3
+rails-html-sanitizer =<wbr>&gt; 1.0.3
+actionview =<wbr>&gt; 4.2.5
+rack =<wbr>&gt; 1.6.4
+rack-test =<wbr>&gt; 0.6.3
+actionpack =<wbr>&gt; 4.2.5
+globalid =<wbr>&gt; 0.3.6
+activejob =<wbr>&gt; 4.2.5
+mime-types =<wbr>&gt; 2.99.1
+mail =<wbr>&gt; 2.6.3
+actionmailer =<wbr>&gt; 4.2.5
+activemodel =<wbr>&gt; 4.2.5
+arel =<wbr>&gt; 6.0.3
+activerecord =<wbr>&gt; 4.2.5
+bcrypt =<wbr>&gt; 3.1.10
+debug_inspector =<wbr>&gt; 0.0.2
+binding_of_caller =<wbr>&gt; 0.7.2
+sass =<wbr>&gt; 3.4.21
+bootstrap-sass =<wbr>&gt; 3.2.0.0
+will_paginate =<wbr>&gt; 3.0.7
+bootstrap-will_paginate =<wbr>&gt; 0.0.10
+byebug =<wbr>&gt; 8.2.2
+coffee-script-source =<wbr>&gt; 1.10.0
+execjs =<wbr>&gt; 2.6.0
+coffee-script =<wbr>&gt; 2.4.1
+thor =<wbr>&gt; 0.19.1
+railties =<wbr>&gt; 4.2.5
+coffee-rails =<wbr>&gt; 4.1.1
+concurrent-ruby =<wbr>&gt; 1.0.1
+daemons =<wbr>&gt; 1.2.3
+orm_adapter =<wbr>&gt; 0.5.0
+responders =<wbr>&gt; 2.1.1
+warden =<wbr>&gt; 1.2.6
+devise =<wbr>&gt; 3.5.6
+eventmachine =<wbr>&gt; 1.0.9.1
+multi_json =<wbr>&gt; 1.11.2
+jbuilder =<wbr>&gt; 2.4.1
+jquery-rails =<wbr>&gt; 4.1.1
+jquery-ui-rails =<wbr>&gt; 5.0.5
+pg =<wbr>&gt; 0.18.4
+quiet_assets =<wbr>&gt; 1.1.0
+sprockets =<wbr>&gt; 3.5.2
+sprockets-rails =<wbr>&gt; 3.0.4
+rails =<wbr>&gt; 4.2.5
+rails4-autocomplete =<wbr>&gt; 1.1.1
+rdoc =<wbr>&gt; 4.2.2
+tilt =<wbr>&gt; 2.0.2
+sass-rails =<wbr>&gt; 5.0.4
+sdoc =<wbr>&gt; 0.4.1
+spring =<wbr>&gt; 1.6.4
+thin =<wbr>&gt; 1.6.4
+turbolinks =<wbr>&gt; 2.5.3
+uglifier =<wbr>&gt; 2.7.2
+web-console =<wbr>&gt; 2.3.0
+</pre></dd>
+				
+				
+					<dt>Ruby load path ($LOAD_PATH)</dt>
+					<dd><pre>/home/igor/rails_app/servosfinan/lib
+/home/igor/rails_app/servosfinan/vendor
+/home/igor/rails_app/servosfinan/app/assets
+/home/igor/rails_app/servosfinan/app/controllers
+/home/igor/rails_app/servosfinan/app/helpers
+/home/igor/rails_app/servosfinan/app/mailers
+/home/igor/rails_app/servosfinan/app/models
+/home/igor/rails_app/servosfinan/app/controllers/concerns
+/home/igor/rails_app/servosfinan/app/models/concerns
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/app/controllers
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/app/helpers
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/app/mailers
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rails4-autocomplete-1.1.1/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jquery-ui-rails-5.0.5/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jquery-ui-rails-5.0.5/app/assets
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bootstrap-will_paginate-0.0.10/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bootstrap-sass-3.2.0.0/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/turbolinks-2.5.3/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jquery-rails-4.1.1/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jquery-rails-4.1.1/vendor
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/coffee-rails-4.1.1/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.3.0/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/uglifier-2.7.2/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/thin-1.6.4/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/extensions/x86_64-linux/2.0.0/thin-1.6.4
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/spring-1.6.4/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sdoc-0.4.1/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-rails-5.0.4/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tilt-2.0.2/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rdoc-4.2.2/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rails-4.2.5/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-rails-3.0.4/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/quiet_assets-1.1.0/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/pg-0.18.4/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/extensions/x86_64-linux/2.0.0/pg-0.18.4
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jbuilder-2.4.1/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/multi_json-1.11.2/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/eventmachine-1.0.9.1/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/extensions/x86_64-linux/2.0.0/eventmachine-1.0.9.1
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/warden-1.2.6/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/responders-2.1.1/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/orm_adapter-0.5.0/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/daemons-1.2.3/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/thor-0.19.1/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/coffee-script-2.4.1/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/execjs-2.6.0/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/coffee-script-source-1.10.0/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/byebug-8.2.2/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/extensions/x86_64-linux/2.0.0/byebug-8.2.2
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/will_paginate-3.0.7/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/binding_of_caller-0.7.2/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/extensions/x86_64-linux/2.0.0/binding_of_caller-0.7.2
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/debug_inspector-0.0.2/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/extensions/x86_64-linux/2.0.0/debug_inspector-0.0.2
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bcrypt-3.1.10/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/extensions/x86_64-linux/2.0.0/bcrypt-3.1.10
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activemodel-4.2.5/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionmailer-4.2.5/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/mail-2.6.3/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/mime-types-2.99.1/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activejob-4.2.5/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/globalid-0.3.6/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-test-0.6.3/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-1.6.4/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rails-html-sanitizer-1.0.3/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/loofah-2.0.3/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rails-dom-testing-1.0.7/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rails-deprecated_sanitizer-1.0.3/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/extensions/x86_64-linux/2.0.0/nokogiri-1.6.7.2
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/mini_portile2-2.0.0/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/erubis-2.7.0/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/builder-3.2.2/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/thread_safe-0.3.5/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/minitest-5.8.4/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/json-1.8.3/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/extensions/x86_64-linux/2.0.0/json-1.8.3
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/i18n-0.7.0/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rake-11.1.1/lib
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/x86_64-linux
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/vendor_ruby/2.0.0
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/vendor_ruby/2.0.0/x86_64-linux
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/vendor_ruby
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux
+</pre></dd>
+				
+				
+					<dt>Ruby loaded libraries ($LOADED_FEATURES)</dt>
+					<dd><pre>enumerator.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/enc/encdb.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/enc/trans/transdb.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/rbconfig.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/thread.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/compatibility.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/defaults.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/deprecate.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/errors.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/version.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/requirement.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/platform.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/basic_specification.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/stub_specification.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/util/stringio.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/specification.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/exceptions.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_gem.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/monitor.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/constants.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/etc.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/fileutils.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/tmpdir.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils/tmpio.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/platform_info.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/platform_info/operating_system.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/platform_info/ruby.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/platform_info/binary_compatibility.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/path_support.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/dependency.rb
+/home/igor/.passenger/native_support/5.0.26/ruby-2.0.0-x86_64-linux/passenger_native_support.so
+/usr/lib/ruby/vendor_ruby/phusion_passenger/native_support.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/socket.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/socket.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/pathname.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/pathname.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/ruby_core_enhancements.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/ruby_core_io_enhancements.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/base64.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/preloader_shared_helpers.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/public_api.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/debug_logging.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/shellwords.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils/shellwords.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/loader_shared_helpers.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/fcntl.so
+/usr/lib/ruby/vendor_ruby/phusion_passenger/message_channel.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/message_client.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils/native_support_utils.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils/unseekable_socket.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/stringio.so
+/usr/lib/ruby/vendor_ruby/phusion_passenger/utils/tee_input.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/vendor/union_station_hooks_core/lib/union_station_hooks_core/version.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/vendor/union_station_hooks_core/lib/union_station_hooks_core.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/vendor/union_station_hooks_rails/lib/union_station_hooks_rails/version.rb
+/usr/lib/ruby/vendor_ruby/phusion_passenger/vendor/union_station_hooks_rails/lib/union_station_hooks_rails.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/constants.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/io/console.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/user_interaction.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/config_file.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/ext/build_error.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/ext/configure_builder.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/delegate.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/tempfile.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/ext/ext_conf_builder.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/ext/rake_builder.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/optparse.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/command.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/ext/cmake_builder.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/ext.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/rubygems_integration.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/current_ruby.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/shared_helpers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/gem_path_manipulation.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/timeout.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/net/protocol.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/uri/common.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/uri/generic.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/uri/ftp.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/uri/http.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/uri/https.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/uri/ldap.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/uri/ldaps.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/uri/mailto.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/uri.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/zlib.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/net/http/exceptions.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/net/http/header.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/net/http/generic_request.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/net/http/request.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/net/http/requests.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/net/http/response.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/net/http/responses.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/net/http/proxy_delta.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/net/http/backward.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/net/http.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/date_core.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/date/format.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/date.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/time.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/request/http_pool.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/request/https_pool.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/request/connection_pools.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/request.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/cgi/core.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/cgi/util.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/cgi/cookie.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/cgi.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/uri_formatter.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/digest.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/digest.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/openssl.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/openssl/bn.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/openssl/cipher.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/openssl/config.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/openssl/digest.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/openssl/x509.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/openssl/buffering.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/openssl/ssl.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/openssl.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/securerandom.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/resolv.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/remote_fetcher.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/gem_remote_fetcher.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/gem_helpers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/match_platform.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/rubygems_ext.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/errors.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/settings.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/strscan.so
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/source.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/digest/sha1.so
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/source/path.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/source/git.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/text.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/name_tuple.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/site_ruby/2.0.0/rubygems/spec_fetcher.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/source/rubygems.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/lockfile_parser.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/set.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/definition.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/dependency.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/ruby_dsl.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/dsl.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/source_list.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/lazy_specification.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/tsort.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/forwardable.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/spec_set.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/environment.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/runtime.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/dep_proxy.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/index.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/remote_specification.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/stub_specification.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/endpoint_specification.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bundler-1.11.2/lib/bundler/setup.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-1.6.4/lib/rack/multipart.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-1.6.4/lib/rack/utils.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-1.6.4/lib/rack.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-1.6.4/lib/rack/builder.rb
+/home/igor/rails_app/servosfinan/config/boot.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/ruby_version_check.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/thread_safe-0.3.5/lib/thread_safe/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/thread_safe-0.3.5/lib/thread_safe/synchronized_delegator.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/thread_safe-0.3.5/lib/thread_safe.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/array/prepend_and_append.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/hash/deep_merge.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/hash/except.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/hash/slice.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/i18n-0.7.0/lib/i18n/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/i18n-0.7.0/lib/i18n/exceptions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/i18n-0.7.0/lib/i18n/interpolate/ruby.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/i18n-0.7.0/lib/i18n.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/lazy_load_hooks.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/i18n-0.7.0/lib/i18n/config.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/i18n.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/thread_safe-0.3.5/lib/thread_safe/non_concurrent_cache_backend.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/thread_safe-0.3.5/lib/thread_safe/mri_cache_backend.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/thread_safe-0.3.5/lib/thread_safe/cache.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/inflector/inflections.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/inflections.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/inflector/methods.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/dependencies/autoload.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/gem_version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/array/extract_options.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/module/attribute_accessors.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/concern.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/logger_silence.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/logger.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/logger.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/singleton.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/kernel/singleton_class.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/module/delegation.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/deprecation/instance_delegator.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/notifications/instrumenter.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/mutex_m.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/notifications/fanout.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/per_thread_registry.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/notifications.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/deprecation/behaviors.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/deprecation/reporting.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/module/aliasing.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/deprecation/method_wrappers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/deprecation/proxy_wrappers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/module/deprecation.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/deprecation.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/kernel/reporting.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/syntax_error.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/psych.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/nodes/node.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/nodes/stream.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/nodes/document.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/nodes/sequence.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/nodes/scalar.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/nodes/mapping.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/nodes/alias.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/nodes.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/streaming.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/visitors/visitor.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/scalar_scanner.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/visitors/to_ruby.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/visitors/emitter.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/visitors/yaml_tree.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/json/ruby_events.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/visitors/json_tree.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/visitors/depth_first.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/visitors.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/handler.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/tree_builder.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/parser.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/omap.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/set.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/coder.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/core_ext.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/deprecated.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/stream.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/json/yaml_events.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/json/tree_builder.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/json/stream.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych/handlers/document_stream.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/psych.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/yaml.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/hash/keys.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/object/blank.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/key_generator.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/security_utils.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/message_verifier.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/initializable.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/ordered_options.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/object/acts_like.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/bigdecimal.so
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/object/duplicable.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/object/deep_dup.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/object/itself.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/object/try.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/object/inclusion.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/object/to_query.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/object/to_param.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/multibyte.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/string/multibyte.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/inflector/transliterate.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/string/inflections.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/date_time/calculations.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/xml_mini/rexml.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/xml_mini.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/array/conversions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/time/acts_like.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/duration.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/ruby_core_support.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/offset_rationals.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/time_or_datetime.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/timezone_definition.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/timezone_offset.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/timezone_transition.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/timezone_transition_definition.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/timezone_index_definition.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/timezone_info.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/data_timezone_info.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/linked_timezone_info.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/transition_data_timezone_info.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/zoneinfo_timezone_info.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/data_source.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/ruby_data_source.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/zoneinfo_data_source.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/timezone_period.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/timezone.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/info_timezone.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/data_timezone.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/linked_timezone.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/timezone_proxy.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/country_index_definition.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/country_info.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/ruby_country_info.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/zoneinfo_country_info.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/country.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo/country_timezone.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tzinfo-1.2.2/lib/tzinfo.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/values/time_zone.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/time/conversions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/time_with_zone.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/date_and_time/zones.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/time/zones.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/date_and_time/calculations.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/date/zones.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/date/calculations.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/time/calculations.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/time/marshal.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/time.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/date/acts_like.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/module/remove_method.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/date/conversions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/date.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/date_time/acts_like.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/date_time/conversions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/date_time/zones.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/date_time.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/numeric/time.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/integer/time.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/string/conversions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/string/zones.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/time.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/array/wrap.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/hash/reverse_merge.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/hash/conversions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/object/conversions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/object/instance_variables.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/json-1.8.3/lib/json/version.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/ostruct.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/json-1.8.3/lib/json/generic_object.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/json-1.8.3/lib/json/common.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/enc/utf_16be.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/enc/utf_16le.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/enc/utf_32be.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/enc/utf_32le.so
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/json-1.8.3/lib/json/ext/parser.so
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/json-1.8.3/lib/json/ext/generator.so
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/json-1.8.3/lib/json/ext.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/json-1.8.3/lib/json.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/bigdecimal/util.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/big_decimal/conversions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/object/json.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/option_merger.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/object/with_options.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/object.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/paths.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/rack.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/configuration.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/inflector.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/module/introspection.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/railtie.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/engine/railties.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/engine.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/application.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/gem_version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/file_update_checker.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/railtie/configuration.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/i18n_railtie.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/railtie.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/class/attribute.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/rails.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_pack/gem_version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_pack/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_pack.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/railtie.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activemodel-4.2.5/lib/active_model/gem_version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activemodel-4.2.5/lib/active_model/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activemodel-4.2.5/lib/active_model.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/crud.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/factory_methods.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/expressions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/predications.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/window_predications.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/math.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/alias_predication.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/order_predications.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/table.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/attributes/attribute.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/attributes.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/compatibility/wheres.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/visitors/visitor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/visitors/depth_first.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/visitors/reduce.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/visitors/to_sql.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/visitors/sqlite.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/visitors/postgresql.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/visitors/mysql.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/visitors/mssql.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/visitors/oracle.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/visitors/where_sql.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/visitors/dot.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/visitors/ibm_db.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/visitors/informix.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/visitors.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/collectors/plain_string.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/collectors/sql_string.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/tree_manager.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/insert_manager.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/select_manager.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/update_manager.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/delete_manager.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/select_statement.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/select_core.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/insert_statement.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/update_statement.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/bind_param.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/terminal.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/true.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/false.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/unary.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/grouping.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/ascending.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/descending.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/unqualified_column.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/with.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/binary.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/equality.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/in.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/join_source.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/delete_statement.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/table_alias.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/infix_operation.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/over.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/matches.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/and.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/function.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/count.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/extract.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/values.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/named_function.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/window.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/full_outer_join.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/inner_join.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/outer_join.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/right_outer_join.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/string_join.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes/sql_literal.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/nodes.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/gem_version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/attribute.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/attribute_set/builder.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/attribute_set.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/enumerable.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/string/filters.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activemodel-4.2.5/lib/active_model/attribute_methods.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/attribute_methods.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/decorator.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/mutable.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/numeric.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/time_value.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/value.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/integer.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/big_integer.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/binary.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/boolean.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/date.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/date_time.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/decimal.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/decimal_without_scale.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/float.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/serialized.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/string.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/text.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/time.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/unsigned_integer.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/type_map.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type/hash_lookup_type_map.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/type.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/benchmark.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/benchmark.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/connection_adapters/schema_cache.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/schema_dumper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/string/strip.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/schema_creation.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/arel-6.0.3/lib/arel/collectors/bind.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/quoting.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/errors.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/migration.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/migration/join_table.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/string/access.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/schema_definitions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/schema_statements.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_limits.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/query_cache.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/descendants_tracker.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/callbacks.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/scoping.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activemodel-4.2.5/lib/active_model/railtie.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/module/attr_internal.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/module/anonymous.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/abstract_controller.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/http/filter_redirect.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-1.6.4/lib/rack/request.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-1.6.4/lib/rack/body_proxy.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-1.6.4/lib/rack/response.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/http/cache.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/http/response.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/json/decoding.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/json/encoding.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/json.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/live.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/hash_with_indifferent_access.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/hash/indifferent_access.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/rescuable.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/http/upload.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-test-0.6.3/lib/rack/mock_session.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-test-0.6.3/lib/rack/test/cookie_jar.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-test-0.6.3/lib/rack/test/mock_digest_request.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-test-0.6.3/lib/rack/test/utils.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-test-0.6.3/lib/rack/test/methods.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-test-0.6.3/lib/rack/test/uploaded_file.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-test-0.6.3/lib/rack/test.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/strong_parameters.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/load_error.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/name_error.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/uri.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/abstract_controller/railties/routes_helpers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/railties/helpers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/gem_version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/version.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/erb.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/string/output_safety.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/railtie.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/railtie.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/railtie.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/array/access.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/globalid-0.3.6/lib/global_id/uri/gid.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/globalid-0.3.6/lib/global_id/global_id.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/globalid-0.3.6/lib/global_id.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/globalid-0.3.6/lib/global_id/railtie.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activejob-4.2.5/lib/active_job/gem_version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activejob-4.2.5/lib/active_job/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activejob-4.2.5/lib/active_job.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activejob-4.2.5/lib/active_job/railtie.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionmailer-4.2.5/lib/action_mailer/gem_version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionmailer-4.2.5/lib/action_mailer/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/class/delegating_attributes.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/module/reachable.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/class/subclasses.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/class.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionmailer-4.2.5/lib/action_mailer.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionmailer-4.2.5/lib/action_mailer/railtie.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/test_unit/railtie.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/numeric/bytes.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/version.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/digest/md5.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/digest/sha2.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/digest/sha2.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/digest_utils.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/cache.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/asset.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/bower.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/utils.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/compressing.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/path_utils.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/path_digest_utils.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/uri_utils.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/dependencies.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/legacy_tilt_processor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/engines.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/encoding_utils.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/http_utils.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/mime.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/paths.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/file_reader.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/legacy_proc_processor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/processor_utils.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/processing.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/transformers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/configuration.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/errors.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/path_dependency_utils.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/resolve.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/uri_tar.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/unloaded_asset.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/loader.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/server.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/base.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/cache/memory_store.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/cached_environment.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/environment.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/constants.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/errors.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/utility/engine.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/synchronization/abstract_object.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/utility/native_extension_loader.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/synchronization/mri_object.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/synchronization/jruby_object.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/synchronization/rbx_object.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/synchronization/truffle_object.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/synchronization/object.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/synchronization/volatile.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/synchronization/abstract_lockable_object.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/synchronization/mri_lockable_object.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/synchronization/jruby_lockable_object.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/synchronization/rbx_lockable_object.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/synchronization/truffle_lockable_object.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/synchronization/lockable_object.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/synchronization/condition.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/synchronization/lock.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/synchronization.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/event.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/concern/dereferenceable.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/concern/obligation.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/concern/logging.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/executor_service.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/utility/at_exit.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/abstract_executor_service.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/serial_executor_service.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/immediate_executor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/delay.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic_reference/concurrent_update_error.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic_reference/direct_update.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic_reference/numeric_cas_wrapper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic_reference/mutex_atomic.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic_reference/ruby.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/atomic_reference.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/utility/processor_counter.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/configuration.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/mutex_atomic_boolean.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/atomic_boolean.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/mutex_atomic_fixnum.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/atomic_fixnum.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/cyclic_barrier.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/mutex_count_down_latch.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/java_count_down_latch.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/count_down_latch.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/read_write_lock.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/abstract_thread_local_var.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/ruby_thread_local_var.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/java_thread_local_var.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/thread_local_var.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/reentrant_read_write_lock.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/mutex_semaphore.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomic/semaphore.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atomics.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/ruby_executor_service.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/utility/monotonic_time.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/ruby_thread_pool_executor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/thread_pool_executor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/cached_thread_pool.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/fixed_thread_pool.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/simple_executor_service.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/indirect_immediate_executor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/java_executor_service.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/java_single_thread_executor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/java_thread_pool_executor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/ruby_single_thread_executor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/safe_task_executor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/serialized_execution.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/serialized_execution_delegator.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/single_thread_executor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/collection/copy_on_write_observer_set.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/collection/copy_on_notify_observer_set.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/concern/observable.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/ivar.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/options.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/scheduled_task.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/collection/java_non_concurrent_priority_queue.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/collection/ruby_non_concurrent_priority_queue.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/collection/non_concurrent_priority_queue.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executor/timer_set.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/executors.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/agent.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/atom.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/thread_safe/util.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/array.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/hash.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/collection/map/non_concurrent_map_backend.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/collection/map/mri_map_backend.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/map.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/tuple.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/async.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/future.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/dataflow.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/maybe.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/exchanger.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/synchronization/abstract_struct.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/immutable_struct.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/mutable_struct.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/mvar.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/promise.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/settable_struct.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/timer_task.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/tvar.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent/thread_safe/synchronized_delegator.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/concurrent-ruby-1.0.1/lib/concurrent.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/manifest_utils.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/utils/gzip.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/manifest.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/context.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/directive_processor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/bundle.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/autoload.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/closure_compressor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/sass_compressor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/uglifier_compressor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/yui_compressor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/coffee_script_processor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/eco_processor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/ejs_processor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/jst_processor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/sass_processor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/erb_processor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/legacy.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/benchmarkable.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/active_model_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/asset_url_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/capture_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/output_safety_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/tag_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/asset_tag_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/atom_feed_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/cache_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/controller_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/csrf_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/date_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/debug_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/javascript_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/url_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rails-html-sanitizer-1.0.3/lib/rails/html/sanitizer/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/nokogiri.so
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/syntax_error.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/pp/node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/pp/character_data.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/pp.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/parse_options.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/sax/document.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/sax/parser_context.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/sax/parser.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/sax/push_parser.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/sax.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/searchable.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/node/save_options.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/attribute_decl.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/element_decl.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/element_content.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/character_data.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/namespace.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/attr.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/dtd.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/cdata.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/text.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/document.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/document_fragment.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/processing_instruction.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/node_set.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/syntax_error.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/xpath/syntax_error.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/xpath.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/xpath_context.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/builder.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/reader.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/notation.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/entity_decl.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/schema.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml/relax_ng.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xml.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xslt/stylesheet.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/xslt.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/html/entity_lookup.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/html/document.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/html/document_fragment.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/html/sax/parser_context.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/html/sax/parser.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/html/sax/push_parser.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/html/element_description.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/html/element_description_defaults.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/html.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/decorators/slop.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/css/node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/css/xpath_visitor.rb
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/x86_64-linux/racc/cparse.so
+/home/igor/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/racc/parser.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/css/parser_extras.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/css/parser.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/css/tokenizer.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/css/syntax_error.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/css.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri/html/builder.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/nokogiri-1.6.7.2/lib/nokogiri.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/loofah-2.0.3/lib/loofah/metahelpers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/loofah-2.0.3/lib/loofah/elements.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/loofah-2.0.3/lib/loofah/html5/whitelist.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/loofah-2.0.3/lib/loofah/html5/scrub.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/loofah-2.0.3/lib/loofah/scrubber.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/loofah-2.0.3/lib/loofah/scrubbers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/loofah-2.0.3/lib/loofah/instance_methods.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/loofah-2.0.3/lib/loofah/xml/document.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/loofah-2.0.3/lib/loofah/xml/document_fragment.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/loofah-2.0.3/lib/loofah/html/document.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/loofah-2.0.3/lib/loofah/html/document_fragment.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/loofah-2.0.3/lib/loofah.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rails-html-sanitizer-1.0.3/lib/rails/html/scrubbers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rails-html-sanitizer-1.0.3/lib/rails/html/sanitizer.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rails-html-sanitizer-1.0.3/lib/rails-html-sanitizer.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/sanitize_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/text_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/form_tag_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/model_naming.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/form_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/form_options_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/number_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/number_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/module/concerning.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/module/qualified_const.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/module.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/record_identifier.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/record_tag_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/rendering_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers/translation_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/helpers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-rails-3.0.4/lib/sprockets/rails/context.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-rails-3.0.4/lib/sprockets/rails/utils.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-rails-3.0.4/lib/sprockets/rails/helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-rails-3.0.4/lib/sprockets/rails/route_wrapper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-rails-3.0.4/lib/sprockets/rails/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/engine/configuration.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/source_annotation_extractor.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/application/configuration.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-rails-3.0.4/lib/sprockets/railtie.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/all.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/string_inquirer.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-rails-5.0.4/lib/sass/rails/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/root.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/util/subset_map.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/util/multibyte_string_scanner.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/util/normalized_map.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/util/cross_platform_random.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/util.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/logger/log_level.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/logger/base.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/logger.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/cache_stores/base.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/cache_stores/filesystem.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/cache_stores/memory.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/cache_stores/chain.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/cache_stores.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/source/position.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/source/range.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/source/map.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/root_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/rule_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/comment_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/prop_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/directive_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/media_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/supports_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/css_import_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/variable_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/mixin_def_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/mixin_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/trace_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/content_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/function_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/return_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/extend_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/if_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/while_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/for_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/each_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/debug_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/warn_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/import_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/charset_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/at_root_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/keyframe_rule_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/error_node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/visitors/cssize.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/visitors/extend.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/visitors/convert.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/visitors/to_css.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/visitors/deep_copy.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/visitors/set_options.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/tree/visitors/check_nesting.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/selector/simple.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/selector/abstract_sequence.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/selector/comma_sequence.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/selector/pseudo.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/selector/sequence.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/selector/simple_sequence.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/selector.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/environment.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/scss/rx.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/value/helpers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/functions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/lexer.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/parser.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/tree/node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/tree/variable.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/tree/funcall.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/tree/operation.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/tree/unary_operation.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/tree/interpolation.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/tree/string_interpolation.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/tree/literal.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/tree/list_literal.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/tree/map_literal.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/tree/selector.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/tree.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/value/base.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/value/string.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/value/number.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/value/color.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/value/bool.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/value/null.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/value/list.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/value/arg_list.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/value/map.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/value.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/scss/script_lexer.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/scss/script_parser.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/scss/parser.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/css_lexer.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/script/css_parser.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/scss/static_parser.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/scss/css_parser.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/scss.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/stack.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/error.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/importers/base.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/importers/filesystem.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/importers/deprecated_path.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/importers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/shared.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/media.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/supports.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/engine.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/railtie.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass/features.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-3.4.21/lib/sass.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/sass_functions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-rails-5.0.4/lib/sass/rails/helpers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sprockets-3.5.2/lib/sprockets/sass_importer.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tilt-2.0.2/lib/tilt/mapping.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tilt-2.0.2/lib/tilt/template.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/tilt-2.0.2/lib/tilt.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-rails-5.0.4/lib/sass/rails/importer.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-rails-5.0.4/lib/sass/rails/cache_store.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-rails-5.0.4/lib/sass/rails/template.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-rails-5.0.4/lib/sass/rails/logger.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-rails-5.0.4/lib/sass/rails/railtie.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-rails-5.0.4/lib/sass/rails.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/sass-rails-5.0.4/lib/sass-rails.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/execjs-2.6.0/lib/execjs/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/execjs-2.6.0/lib/execjs/module.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/execjs-2.6.0/lib/execjs/encoding.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/execjs-2.6.0/lib/execjs/runtime.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/execjs-2.6.0/lib/execjs/disabled_runtime.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/execjs-2.6.0/lib/execjs/duktape_runtime.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/execjs-2.6.0/lib/execjs/external_runtime.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/execjs-2.6.0/lib/execjs/ruby_racer_runtime.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/execjs-2.6.0/lib/execjs/ruby_rhino_runtime.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/execjs-2.6.0/lib/execjs/runtimes.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/execjs-2.6.0/lib/execjs.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/uglifier-2.7.2/lib/uglifier/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/uglifier-2.7.2/lib/uglifier.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/coffee-script-source-1.10.0/lib/coffee_script/source.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/coffee-script-2.4.1/lib/coffee_script.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/coffee-script-2.4.1/lib/coffee-script.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/coffee-rails-4.1.1/lib/coffee/rails/engine.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/coffee-rails-4.1.1/lib/coffee/rails/template_handler.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/coffee-rails-4.1.1/lib/coffee/rails/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/coffee-rails-4.1.1/lib/coffee-rails.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jquery-rails-4.1.1/lib/jquery/rails/engine.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jquery-rails-4.1.1/lib/jquery/rails/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jquery-rails-4.1.1/lib/jquery/rails.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jquery-rails-4.1.1/lib/jquery-rails.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/turbolinks-2.5.3/lib/turbolinks/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/turbolinks-2.5.3/lib/turbolinks/xhr_headers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/turbolinks-2.5.3/lib/turbolinks/xhr_url_for.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/turbolinks-2.5.3/lib/turbolinks/cookies.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/turbolinks-2.5.3/lib/turbolinks/x_domain_blocker.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/turbolinks-2.5.3/lib/turbolinks/redirection.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/turbolinks-2.5.3/lib/turbolinks.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/proxy_object.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jbuilder-2.4.1/lib/jbuilder/jbuilder.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jbuilder-2.4.1/lib/jbuilder/blank.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/array/grouping.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/array.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jbuilder-2.4.1/lib/jbuilder/key_formatter.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jbuilder-2.4.1/lib/jbuilder/errors.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/multi_json-1.11.2/lib/multi_json/options.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/multi_json-1.11.2/lib/multi_json/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/multi_json-1.11.2/lib/multi_json/adapter_error.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/multi_json-1.11.2/lib/multi_json/parse_error.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/multi_json-1.11.2/lib/multi_json.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/string/starts_ends_with.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/http/mime_types.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/http/mime_type.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/cache.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jbuilder-2.4.1/lib/jbuilder/jbuilder_template.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jbuilder-2.4.1/lib/jbuilder/railtie.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jbuilder-2.4.1/lib/jbuilder.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/pg-0.18.4/lib/pg_ext.so
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/pg-0.18.4/lib/pg/exceptions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/pg-0.18.4/lib/pg/constants.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/pg-0.18.4/lib/pg/coder.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/pg-0.18.4/lib/pg/text_encoder.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/pg-0.18.4/lib/pg/text_decoder.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/pg-0.18.4/lib/pg/basic_type_mapping.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/pg-0.18.4/lib/pg/type_map_by_column.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/pg-0.18.4/lib/pg/connection.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/pg-0.18.4/lib/pg/result.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/pg-0.18.4/lib/pg.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/responders-2.1.1/lib/responders/controller_method.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/responders-2.1.1/lib/responders.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bootstrap-sass-3.2.0.0/lib/bootstrap-sass/engine.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bootstrap-sass-3.2.0.0/lib/bootstrap-sass.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/will_paginate-3.0.7/lib/will_paginate/page_number.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/will_paginate-3.0.7/lib/will_paginate/per_page.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/will_paginate-3.0.7/lib/will_paginate/collection.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/will_paginate-3.0.7/lib/will_paginate/i18n.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/will_paginate-3.0.7/lib/will_paginate/railtie.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/will_paginate-3.0.7/lib/will_paginate.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bootstrap-will_paginate-0.0.10/lib/bootstrap-will_paginate/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/bootstrap-will_paginate-0.0.10/lib/bootstrap-will_paginate.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jquery-ui-rails-5.0.5/lib/jquery/ui/rails/engine.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jquery-ui-rails-5.0.5/lib/jquery/ui/rails/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jquery-ui-rails-5.0.5/lib/jquery/ui/rails.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jquery-ui-rails-5.0.5/lib/jquery-ui-rails.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rails4-autocomplete-1.1.1/lib/rails4-autocomplete/form_helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rails4-autocomplete-1.1.1/lib/rails4-autocomplete/autocomplete.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rails4-autocomplete-1.1.1/lib/rails4-autocomplete/rails/engine.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/subscriber.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/log_subscriber.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/log_subscriber.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/struct.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/params_wrapper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/dependencies.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/middleware/stack.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/erubis-2.7.0/lib/erubis/util.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/erubis-2.7.0/lib/erubis/generator.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/erubis-2.7.0/lib/erubis/converter.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/erubis-2.7.0/lib/erubis/error.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/erubis-2.7.0/lib/erubis/context.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/erubis-2.7.0/lib/erubis/evaluator.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/erubis-2.7.0/lib/erubis/engine.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/erubis-2.7.0/lib/erubis/helper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/erubis-2.7.0/lib/erubis/enhancer.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/erubis-2.7.0/lib/erubis/engine/eruby.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/erubis-2.7.0/lib/erubis/local-setting.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/erubis-2.7.0/lib/erubis.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/configurable.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/abstract_controller/base.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/log_subscriber.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/context.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/template/handlers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/template/handlers/erb.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/template/handlers/builder.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/template/handlers/raw.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/template.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/template/resolver.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/lookup_context.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/template/types.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/base.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/view_paths.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/abstract_controller/rendering.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/abstract_controller/translation.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/abstract_controller/asset_paths.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/abstract_controller/helpers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/helpers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/hide_actions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/regexp.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/routing.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/model_naming.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/routing/polymorphic_routes.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/routing/url_for.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/abstract_controller/url_for.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/url_for.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/abstract_controller/logger.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/http/headers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/exceptions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/http/mime_negotiation.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/http/parameters.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/http/parameter_filter.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/http/filter_parameters.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/http/url.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/http/request.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/rack_delegation.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/redirecting.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/rendering.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/layouts.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/rendering.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/renderers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/head.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/conditional_get.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/etag_with_template_digest.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/abstract_controller/callbacks.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/caching/fragments.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/caching.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/abstract_controller/collector.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/mime_responds.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/implicit_render.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/cookies.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/flash.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-1.6.4/lib/rack/session/abstract/id.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/middleware/cookies.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/request_forgery_protection.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/force_ssl.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rack-1.6.4/lib/rack/chunked.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/streaming.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/data_streaming.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/http_authentication.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/rescue.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/metal/instrumentation.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/path_set.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/responders-2.1.1/lib/action_controller/respond_with.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/responders-2.1.1/lib/action_controller/responder.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_controller/base.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rails4-autocomplete-1.1.1/lib/rails4-autocomplete/orm.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rails4-autocomplete-1.1.1/lib/rails4-autocomplete/orm/active_record.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rails4-autocomplete-1.1.1/lib/rails4-autocomplete/formtastic.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/rails4-autocomplete-1.1.1/lib/rails4-autocomplete.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/orm_adapter-0.5.0/lib/orm_adapter/base.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/orm_adapter-0.5.0/lib/orm_adapter/to_adapter.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/orm_adapter-0.5.0/lib/orm_adapter/version.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/orm_adapter-0.5.0/lib/orm_adapter.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/ordered_hash.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/lib/devise/controllers/sign_in_out.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/lib/devise/controllers/store_location.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/lib/devise/controllers/helpers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/warden-1.2.6/lib/warden/mixins/common.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/warden-1.2.6/lib/warden/proxy.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/warden-1.2.6/lib/warden/hooks.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/warden-1.2.6/lib/warden/config.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/warden-1.2.6/lib/warden/manager.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/warden-1.2.6/lib/warden/errors.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/warden-1.2.6/lib/warden/session_serializer.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/warden-1.2.6/lib/warden/strategies.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/warden-1.2.6/lib/warden/strategies/base.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/warden-1.2.6/lib/warden.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/lib/devise/mapping.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/lib/devise/hooks/activatable.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/lib/devise/hooks/csrf_cleaner.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/lib/devise/models/authenticatable.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/lib/devise/models.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/lib/devise/modules.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/router/utils.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/router/strexp.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/routes.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/formatter.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/scanner.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/visitors.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/nodes/node.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/parser_extras.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/parser.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/route.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/path/pattern.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/router.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/nfa/dot.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/gtg/transition_table.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/gtg/builder.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/gtg/simulator.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/nfa/transition_table.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/nfa/builder.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey/nfa/simulator.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/journey.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/routing/endpoint.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/routing/route_set.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/routing/redirection.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/routing/mapper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/lib/devise/rails/routes.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/lib/devise/rails/warden_compat.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/lib/devise/rails.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/devise-3.5.6/lib/devise.rb
+/home/igor/rails_app/servosfinan/config/application.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/application/bootstrap.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/application/finisher.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/railties-4.2.5/lib/rails/application/routes_reloader.rb
+/home/igor/rails_app/servosfinan/config/environments/production.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/marshal.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/file/atomic.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/file.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/kernel/agnostics.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/kernel/concern.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/kernel.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/numeric/conversions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/numeric.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/thread.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/integer/multiple.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/integer/inflections.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/integer.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/string/behavior.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/string/exclude.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/string/inquiry.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/string/indent.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/string.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/hash/compact.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/hash/transform_values.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/hash.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/range/conversions.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/range/include_range.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/range/overlaps.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/range/each.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/range.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext/big_decimal.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/core_ext.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/all.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/cache/file_store.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/request/utils.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.5/lib/action_dispatch/middleware/exception_wrapper.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activemodel-4.2.5/lib/active_model/secure_password.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/routing_url_for.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/log_subscriber.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/activerecord-4.2.5/lib/active_record/railties/controller_runtime.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/globalid-0.3.6/lib/global_id/signed_global_id.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/actionview-4.2.5/lib/action_view/dependency_tracker.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/jbuilder-2.4.1/lib/jbuilder/dependency_tracker.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/responders-2.1.1/lib/responders/flash_responder.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/will_paginate-3.0.7/lib/will_paginate/core_ext.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/will_paginate-3.0.7/lib/will_paginate/deprecation.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/will_paginate-3.0.7/lib/will_paginate/view_helpers.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/will_paginate-3.0.7/lib/will_paginate/view_helpers/link_renderer_base.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/will_paginate-3.0.7/lib/will_paginate/view_helpers/link_renderer.rb
+/home/igor/.rvm/gems/ruby-2.0.0-p643/gems/will_paginate-3.0.7/lib/will_paginate/view_helpers/action_view.rb
+</pre></dd>
+				
+				</dl>
+			</div>
+		</div>
+		<div id="site_footer">
+			<!--
+			   You are free to modify the footer as you see fit,
+			   but we kindly ask of you to preserve to following
+			   text. Thank you.
+			-->
+			<div class="container">
+				Powered by <a href="https://www.phusionpassenger.com/">Phusion Passenger</a>,
+				<tt>mod_rails</tt> / <tt>mod_rack</tt> for Apache and Nginx.
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+

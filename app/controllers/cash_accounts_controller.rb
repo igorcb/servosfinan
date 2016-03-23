@@ -1,4 +1,5 @@
 class CashAccountsController < ApplicationController
+  before_filter :authenticate_user!
   before_action :set_cash_account, only: [:show, :edit, :update, :destroy]
 
   # GET /cash_accounts

@@ -1,4 +1,5 @@
 class AccountReceivablesController < ApplicationController
+  before_filter :authenticate_user!
   before_action :set_account_receivable, only: [:show, :edit, :update, :destroy, :lower, :pay]
 
   # GET /account_receivables
