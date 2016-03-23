@@ -32,5 +32,7 @@
   <%= @current_account.historico %>
 </p>
 
-<%= link_to 'Edit', edit_current_account_path(@current_account) %> |
-<%= link_to 'Back', current_accounts_path %>
+<div class="form-group">
+  <%= link_to 'Edit', edit_current_account_path(@current_account), class: "btn btn-primary" %>
+  <%= link_to 'Back', current_accounts_path, class: "btn btn-default" %>
+</div>

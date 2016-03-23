@@ -5,5 +5,7 @@
   <%= @cost_center.name %>
 </p>
 
-<%= link_to 'Edit', edit_cost_center_path(@cost_center) %> |
-<%= link_to 'Back', cost_centers_path %>
+<div class="form-group">
+	<%= link_to 'Edit', edit_cost_center_path(@cost_center), class: "btn btn-primary" %>
+	<%= link_to 'Back', cost_centers_path, class: "btn btn-default" %>
+</div>

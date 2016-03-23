@@ -35,8 +35,10 @@
   <%= @account_receivable.observacao %>
 </p>
 
+<div class="form-group">
 <%= link_to 'Edit', edit_account_receivable_path(@account_receivable), class: "btn btn-primary" %>
 <%= link_to 'Back', account_receivables_path, class: "btn btn-default" %>
 <%= link_to 'Baixar', lower_account_receivable_path(@account_receivable), class: "btn btn-default" %>
+</div>
 
 <%= render "receivables" %>

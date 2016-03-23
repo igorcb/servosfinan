@@ -20,5 +20,7 @@
   <%= @cash_account.conta_corrente %>
 </p>
 
-<%= link_to 'Edit', edit_cash_account_path(@cash_account) %> |
-<%= link_to 'Back', cash_accounts_path %>
+<div class="form-group">
+	<%= link_to 'Edit', edit_cash_account_path(@cash_account), class: "btn btn-primary"  %>
+	<%= link_to 'Back', cash_accounts_path, class: "btn btn-default"  %>
+</div>

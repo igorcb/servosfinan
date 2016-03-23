@@ -10,5 +10,7 @@
   <%= @bank.name %>
 </p>
 
-<%= link_to 'Edit', edit_bank_path(@bank) %> |
-<%= link_to 'Back', banks_path %>
+<div class="form-group">
+	<%= link_to 'Edit', edit_bank_path(@bank), class: "btn btn-primary" %> 
+	<%= link_to 'Back', banks_path, class: "btn btn-default" %>
+</div>

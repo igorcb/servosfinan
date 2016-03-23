@@ -11,23 +11,23 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, {class: "form-control"}  %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :bank_id %><br>
-    <%= f.text_field :bank_id %>
+    <%= f.select(:bank_id, Bank.order(:name).collect {|c| [c.name_full, c.id]}, {include_blank: true}, {class: "form-control"} ) %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :agencia %><br>
-    <%= f.text_field :agencia %>
+    <%= f.text_field :agencia, {class: "form-control"}  %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :conta_corrente %><br>
-    <%= f.text_field :conta_corrente %>
+    <%= f.text_field :conta_corrente, {class: "form-control"}  %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Salvar", class: "btn btn-primary" %>
   </div>
 <% end %>
