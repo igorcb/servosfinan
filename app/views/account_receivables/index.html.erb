@@ -1,40 +1,43 @@
-<p id="notice"><%= notice %></p>
+<div class="panel panel-default">
+  <div class="panel-heading">Listing Account Receivables</div>
+  <div class="panel-body">
+    <%= link_to 'New Account receivable', new_account_receivable_path , class: "btn btn-primary btn-lg btn-block" %>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <tr>
+          <th>Supplier</th>
+          <th>Cost center</th>
+          <th>Payment method</th>
+          <th>Documento</th>
+          <th>Data vencimento</th>
+          <th>Valor</th>
+          <th>Pago</th>
+          <th>Status</th>
+          <th>Observacao</th>
+          <th>Options</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-<h1>Listing Account Receivables</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Type account</th>
-      <th>Supplier</th>
-      <th>Cost center</th>
-      <th>Payment method</th>
-      <th>Documento</th>
-      <th>Data vencimento</th>
-      <th>Valor</th>
-      <th>Observacao</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @account_receivables.each do |account_receivable| %>
-      <tr>
-        <td><%= account_receivable.supplier.name %></td>
-        <td><%= account_receivable.cost_center.name %></td>
-        <td><%= account_receivable.payment_method.name %></td>
-        <td><%= account_receivable.documento %></td>
-        <td><%= date_br(account_receivable.data_vencimento) %></td>
-        <td><%= account_receivable.valor %></td>
-        <td><%= account_receivable.observacao %></td>
-        <td><%= link_to 'Show', account_receivable %></td>
-        <td><%= link_to 'Edit', edit_account_receivable_path(account_receivable) %></td>
-        <td><%= link_to 'Destroy', account_receivable, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Account receivable', new_account_receivable_path %>
+      <tbody>
+        <% @account_receivables.each do |account_receivable| %>
+          <tr>
+            <td><%= account_receivable.supplier.name %></td>
+            <td><%= account_receivable.cost_center.name %></td>
+            <td><%= account_receivable.payment_method.name %></td>
+            <td><%= account_receivable.documento %></td>
+            <td><%= date_br(account_receivable.data_vencimento) %></td>
+            <td><%= account_receivable.valor %></td>
+            <td><%= account_receivable.total_pago %></td>
+            <td><%= account_receivable.status_name %></td>
+            <td><%= account_receivable.observacao %></td>
+            <td><%= link_to 'Show', account_receivable, class: "btn btn-info btn-xs"  %></td>
+            <td><%= link_to 'Edit', edit_account_receivable_path(account_receivable), class: "btn btn-primary btn-xs"  %></td>
+            <td><%= link_to 'Destroy', account_receivable, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-xs"  %></td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -11,35 +11,35 @@
     </div>
   <% end %>
   <%= hidden_field_tag "account_receivable[type_account]", AccountReceivable::TipoAccount::Motorista %>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :supplier_id %><br>
     <%= f.select(:supplier_id, Driver.order(:name).collect {|c| [c.name, c.id]}, {include_blank: true}, {class: "form-control"} ) %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :cost_center_id %><br>
     <%= f.select(:cost_center_id, CostCenter.order(:name).collect {|c| [c.name, c.id]}, {include_blank: true}, {class: "form-control"} ) %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :payment_method_id %><br>
     <%= f.select(:payment_method_id, PaymentMethod.order(:name).collect {|c| [c.name, c.id]}, {include_blank: true}, {class: "form-control"} ) %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :documento %><br>
-    <%= f.text_field :documento %>
+    <%= f.text_field :documento, {class: "form-control"}  %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :data_vencimento %><br>
-    <%= f.date_select :data_vencimento %>
+    <%= f.date_select :data_vencimento, {class: "form-control"}  %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :valor %><br>
-    <%= f.text_field :valor %>
+    <%= f.text_field :valor, {class: "form-control"}  %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :observacao %><br>
-    <%= f.text_area :observacao %>
+    <%= f.text_area :observacao, {class: "form-control"}  %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Salvar", class: "btn btn-primary" %>
   </div>
 <% end %>

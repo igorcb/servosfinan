@@ -11,39 +11,39 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :type_account %><br>
-    <%= f.number_field :type_account %>
+    <%= f.number_form-group :type_account %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :supplier_id %><br>
-    <%= f.number_field :supplier_id %>
+    <%= f.number_form-group :supplier_id %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :cost_center_id %><br>
-    <%= f.number_field :cost_center_id %>
+    <%= f.number_form-group :cost_center_id %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :payment_method_id %><br>
-    <%= f.text_field :payment_method_id %>
+    <%= f.text_form-group :payment_method_id %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :documento %><br>
-    <%= f.text_field :documento %>
+    <%= f.text_form-group :documento %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :data_vencimento %><br>
     <%= f.date_select :data_vencimento %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :valor %><br>
-    <%= f.text_field :valor %>
+    <%= f.text_form-group :valor %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :observacao %><br>
     <%= f.text_area :observacao %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit, class: "btn btn-primary" %>
   </div>
 <% end %>
