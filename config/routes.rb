@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :current_accounts
   resources :lower_receivables, only: [:destroy]
   resources :account_receivables do 
     member do
@@ -14,6 +15,9 @@ Rails.application.routes.draw do
   resources :payment_methods
   resources :cost_centers
   resources :drivers
+
+  devise_for :users, :class_name => 'User'
+  root to: "static_pages#home"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
