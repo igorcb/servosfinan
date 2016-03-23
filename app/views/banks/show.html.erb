@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @bank.number %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bank.name %>
+</p>
+
+<div class="form-group">
+	<%= link_to 'Edit', edit_bank_path(@bank), class: "btn btn-primary" %> 
+	<%= link_to 'Back', banks_path, class: "btn btn-default" %>
+</div>

@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cash_account.name %>
+</p>
+
+<p>
+  <strong>Bank:</strong>
+  <%= @cash_account.bank.name %>
+</p>
+
+<p>
+  <strong>Agencia:</strong>
+  <%= @cash_account.agencia %>
+</p>
+
+<p>
+  <strong>Conta corrente:</strong>
+  <%= @cash_account.conta_corrente %>
+</p>
+
+<div class="form-group">
+	<%= link_to 'Edit', edit_cash_account_path(@cash_account), class: "btn btn-primary"  %>
+	<%= link_to 'Back', cash_accounts_path, class: "btn btn-default"  %>
+</div>

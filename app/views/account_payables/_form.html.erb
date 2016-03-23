@@ -1,0 +1,49 @@
+<%= form_for(@account_payable) do |f| %>
+  <% if @account_payable.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@account_payable.errors.count, "error") %> prohibited this account_payable from being saved:</h2>
+
+      <ul>
+      <% @account_payable.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :type_account %><br>
+    <%= f.number_form-group :type_account %>
+  </div>
+  <div class="form-group">
+    <%= f.label :supplier_id %><br>
+    <%= f.number_form-group :supplier_id %>
+  </div>
+  <div class="form-group">
+    <%= f.label :cost_center_id %><br>
+    <%= f.number_form-group :cost_center_id %>
+  </div>
+  <div class="form-group">
+    <%= f.label :payment_method_id %><br>
+    <%= f.text_form-group :payment_method_id %>
+  </div>
+  <div class="form-group">
+    <%= f.label :documento %><br>
+    <%= f.text_form-group :documento %>
+  </div>
+  <div class="form-group">
+    <%= f.label :data_vencimento %><br>
+    <%= f.date_select :data_vencimento %>
+  </div>
+  <div class="form-group">
+    <%= f.label :valor %><br>
+    <%= f.text_form-group :valor %>
+  </div>
+  <div class="form-group">
+    <%= f.label :observacao %><br>
+    <%= f.text_area :observacao %>
+  </div>
+  <div class="actions">
+    <%= f.submit, class: "btn btn-primary" %>
+  </div>
+<% end %>

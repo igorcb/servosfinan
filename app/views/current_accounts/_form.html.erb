@@ -1,0 +1,41 @@
+<%= form_for(@current_account) do |f| %>
+  <% if @current_account.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@current_account.errors.count, "error") %> prohibited this current_account from being saved:</h2>
+
+      <ul>
+      <% @current_account.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :cash_account_id %><br>
+    <%= f.select(:cash_account_id, CashAccount.order(:name).collect {|c| [c.name, c.id]}, {include_blank: true}, {class: "form-control"} ) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :cost_center_id %><br>
+    <%= f.select(:cost_center_id, CostCenter.order(:name).collect {|c| [c.name, c.id]}, {include_blank: true}, {class: "form-control"} ) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :tipo %><br>
+    <%= f.select( :tipo, select_credito_debito, {include_blank: "Selecione Crédito/Débito"}, {class: "form-control"} ) %>      
+  </div>
+  <div class="form-group">
+    <%= f.label :data %><br>
+    <%= f.date_select :data, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :valor %><br>
+    <%= f.text_field :valor, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :historico %><br>
+    <%= f.text_field :historico, class: "form-control" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Salvar", class: "btn btn-primary" %>
+  </div>
+<% end %>

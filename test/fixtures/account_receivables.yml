@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type_account: 1
+  supplier_id: 1
+  cost_center_id: 1
+  payment_method_id: 
+  documento: MyString
+  data_vencimento: 2016-03-22
+  valor: 9.99
+  observacao: MyText
+
+two:
+  type_account: 1
+  supplier_id: 1
+  cost_center_id: 1
+  payment_method_id: 
+  documento: MyString
+  data_vencimento: 2016-03-22
+  valor: 9.99
+  observacao: MyText

@@ -1,0 +1,33 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Listing Account Banks</div>
+  <div class="panel-body">
+    <%= link_to 'New Account Banks', new_cash_account_path , class: "btn btn-primary btn-lg btn-block" %>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Bank</th>
+            <th>Agencia</th>
+            <th>Conta corrente</th>
+            <th colspan="3">Options</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @cash_accounts.each do |cash_account| %>
+            <tr>
+              <td><%= cash_account.name %></td>
+              <td><%= cash_account.bank.name_full if cash_account.bank.present? %></td>
+              <td><%= cash_account.agencia %></td>
+              <td><%= cash_account.conta_corrente %></td>
+              <td><%= link_to 'Show', cash_account, class: "btn btn-info btn-xs" %></td>
+              <td><%= link_to 'Edit', edit_cash_account_path(cash_account), class: "btn btn-primary btn-xs" %></td>
+              <td><%= link_to 'Destroy', cash_account, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-xs" %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cash_account_id: 
+  cost_center_id: 
+  tipo: 1
+  data: 2016-03-22
+  valor: 9.99
+  historico: MyString
+
+two:
+  cash_account_id: 
+  cost_center_id: 
+  tipo: 1
+  data: 2016-03-22
+  valor: 9.99
+  historico: MyString

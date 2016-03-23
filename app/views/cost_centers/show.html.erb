@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cost_center.name %>
+</p>
+
+<div class="form-group">
+	<%= link_to 'Edit', edit_cost_center_path(@cost_center), class: "btn btn-primary" %>
+	<%= link_to 'Back', cost_centers_path, class: "btn btn-default" %>
+</div>

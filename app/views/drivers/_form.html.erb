@@ -11,19 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :vtr %><br>
-    <%= f.text_field :vtr %>
+    <%= f.text_field :vtr, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :valor %><br>
-    <%= f.text_field :valor %>
+    <%= f.text_field :valor, class: "form-control" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Salvar", class: "btn btn-primary" %>
   </div>
 <% end %>
