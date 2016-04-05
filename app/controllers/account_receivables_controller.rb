@@ -70,6 +70,7 @@ class AccountReceivablesController < ApplicationController
     end
     @cash_accounts = CashAccount.order('name')
     @cost_center = CostCenter.order('name')
+    @payment_methods = PaymentMethod.order('name')
   end
 
   def pay
@@ -109,7 +110,7 @@ class AccountReceivablesController < ApplicationController
     def account_receivable_params
       params.require(:account_receivable).permit(:type_account, :supplier_id, :cost_center_id, :payment_method_id, :documento, 
         :data_vencimento, :valor, :observacao,
-        lower_receivables: [:data_pagamento, :valor_pago, :juros, :desconto, :total_pago]
+        lower_receivables: [:payment_method_id, :data_pagamento, :valor_pago, :juros, :desconto, :total_pago, :observacao]
         )
     end
 end

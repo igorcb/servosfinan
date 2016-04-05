@@ -1,6 +1,7 @@
 class LowerAccountReceivable < ActiveRecord::Base
   belongs_to :account_receivable
   belongs_to :cash_account
+  belongs_to :payment_method
 
   before_destroy :rollback_current_account
 

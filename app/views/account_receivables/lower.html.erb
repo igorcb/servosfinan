@@ -16,6 +16,11 @@
   </div>
 
   <div class="form-group">
+    <%= label_tag :payment_method_id, "Forma Recebimento" %><br>
+    <%= select_tag "lower_receivables[payment_method_id]", options_from_collection_for_select(@payment_methods, "id", "name"), :prompt => "Selecione uma opção", class: "form-control" %>
+  </div>
+
+  <div class="form-group">
     <%= label_tag :data_pagamento %><br>
     <%= text_field_tag "lower_receivables[data_pagamento]", "", class: "form-control data" %>
   </div>
@@ -33,6 +38,11 @@
   <div class="form-group">
     <%= label_tag :desconto %><br>
     <%= text_field_tag "lower_receivables[desconto]", "0.00", class: "form-control money2" %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :observacao %><br>
+    <%= text_area_tag "lower_receivables[observacao]", "", class: "form-control" %>
   </div>
 
   <hr />

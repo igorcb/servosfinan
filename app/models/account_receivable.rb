@@ -72,6 +72,8 @@ class AccountReceivable < ActiveRecord::Base
                                              valor_pago: options[:valor_pago],
                                              juros: options[:juros],
                                              desconto: options[:desconto],
+                                             payment_method_id: options[:payment_method_id],
+                                             observacao: options[:observacao],
                                              total_pago: options[:total_pago],
                                              cash_account_id: options[:cash_account_id],
                                              cost_center_id: options[:cost_center_id]
