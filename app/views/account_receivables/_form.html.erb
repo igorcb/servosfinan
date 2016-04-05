@@ -13,7 +13,7 @@
   <%= hidden_field_tag "account_receivable[type_account]", AccountReceivable::TipoAccount::Motorista %>
   <div class="form-group">
     <%= f.label :supplier_id %><br>
-    <%= f.select(:supplier_id, Driver.order(:name).collect {|c| [c.name, c.id]}, {include_blank: true}, {class: "form-control"} ) %>
+    <%= f.select(:supplier_id, Driver.ordered.collect {|c| [c.name, c.id]}, {include_blank: true}, {class: "form-control"} ) %>
   </div>
   <div class="form-group">
     <%= f.label :cost_center_id %><br>
