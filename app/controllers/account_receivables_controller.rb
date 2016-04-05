@@ -74,8 +74,16 @@ class AccountReceivablesController < ApplicationController
   end
 
   def pay
-    if !params[:lower_receivables][:cash_account_id].present?
+    if !params[:lower_receivables][:cost_center_id].present?
+      flash[:danger] = "Cost Center can't be blank."
+      redirect_to lower_account_receivable_path(params[:id])
+      return 
+    elsif !params[:lower_receivables][:cash_account_id].present?
       flash[:danger] = "Conta Corrente can't be blank."
+      redirect_to lower_account_receivable_path(params[:id])
+      return 
+    elsif !params[:lower_receivables][:payment_method_id].present?
+      flash[:danger] = "Forma de recebimento can't be blank."
       redirect_to lower_account_receivable_path(params[:id])
       return 
     elsif !params[:lower_receivables][:data_pagamento].present?
